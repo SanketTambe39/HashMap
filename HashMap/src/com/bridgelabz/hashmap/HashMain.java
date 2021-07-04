@@ -3,8 +3,13 @@ package com.bridgelabz.hashmap;
 public class HashMain {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		HashMapService HashMap = new HashMapService();
+		String givenString = "To be or not to be";
+		String[] myStr = givenString.toLowerCase().split(" ");
+		for (String string : myStr)
+		{
+			HashMap.put(string, 1);
+		}
+		HashMap.print();
 	}
-
 }
